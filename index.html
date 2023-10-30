@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Garamond, seref;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Garamond, seref;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body style="background-color:LightGray;">
+<div id="back_to_top"></div>
+<div id="head_logo" style="width:100%; text-align: center; display:inline-block;font-family:Garamond, serif; font-size:300%;">
+<img src="WG_logo_02.jpg" alt="WG Construction Company" width="200" height="200" class="center">
+
+WG Construction Company
+</div>
+<hr>
+<table style="width:100%">
+<tr>
+<td style="width:33%"><a href="#Contact">Contact</a></td>
+<td style="width:33%"><a href="#projects">Projects and Testimonials</a></td>
+<td style="width:33%"><a href="mailto:w.g.const.company@gmail.com">Send email with your ideas</a></td>
+</tr>
+</table>
+<p id="wg_info">
+<h3 style="font-family: Garamond, serif; font-size:150%; text-align: center;">We are WG Construction and we pride ourselves on an excellent workmanship and a job well done. With many years of experience, we gladly service the East Tennessee Area. We specialize in aluminum canopies, screen rooms, and carports.<br>
+<br>Checkout some of our work, just click one of the tabs below!</h3>
+</p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Residential Aluminum Canopies')">Residential Aluminum Canopies</button>
+  <button class="tablinks" onclick="openCity(event, 'Commercial Aluminum Canopies')">Commercial Aluminum Canopies</button>
+  <button class="tablinks" onclick="openCity(event, 'Business Decks with Canopies')">Business Decks with Canopies</button>
+  <button class="tablinks" onclick="openCity(event, 'Residential Carports')">Residential Carports</button>
+  <button class="tablinks" onclick="openCity(event, 'Screen Rooms')">Screen Rooms</button>
+</div>
+
+
+<div id="Residential Aluminum Canopies" class="tabcontent">
+  <h3>Residential Aluminum Canopies</h3>
+  <p><img src="alum_canopy_resi_001.jpg" width="250" height="200">
+
+<img src="alum_canopy_resi_002.jpg" width="250" height="200">
+
+<img src="picketalum_canopy_resi_001.jpg" width="250" height="200">
+
+<img src="redalum_canopy_resi_003.jpg" width="250" height="200">
+</p>
+</div>
+
+<div id="Commercial Aluminum Canopies" class="tabcontent">
+  <h3>Commercial Aluminum Canopies</h3>
+  <p><img src="alum_canopy_busi_001.JPG" width="250" height="200">
+
+<img src="alum_canopy_busi_002.jpg" width="250" height="200">
+
+<img src="alum_canopy_busi_quality_001.jpg" width="250" height="200">
+  </p> 
+</div>
+
+<div id="Residential Carports" class="tabcontent">
+  <h3>Residential Carports</h3>
+  <p><img src="alum_carport_resi_001.jpg" width="250" height="200">
+</p>
+</div>
+
+<div id="Business Decks with Canopies" class="tabcontent">
+  <h3>Business Decks with Canopies</h3>
+  <p><img src="deckalum_canopy_busi_001.jpg" width="250" height="200">
+<img src="deckalum_canopy_busi_002.jpg" width="250" height="200">
+</p>
+</div>
+
+<div id="Screen Rooms" class="tabcontent">
+  <h3>Screen Rooms</h3>
+  <p><img src="Screen_room_resi_001.JPG" width="250" height="200">
+</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<hr>
+<div id="projects">
+<h3>"We love our screened in room Whitney added, and the deck she refinished is amazing. We had to get it reinforced and she made everyhting look and feel wonderful!"
+<br>-Christian L.<br>
+<br>"Our deck was way too hot to enjoy, until they came out and added in our screened in room. It's so nice to sit out and enjoy the outside bug free in a shaded room."
+<br>-Jaime H.
+</div>
+<hr>
+<div id="Contact" style="text-align: center">
+<h2 style="font-family: Garamond, serif; font-size:200%;">Contact: <br>Whitney Gonzalez</h2>
+<a href="tel:8656849320">865-684-9320</a>
+<br>
+<td style="width:25%"><a href="mailto:w.g.const.company@gmail.com">w.g.const.company@gmail.com</a></td>
+<br>
+Published by <a href="Llynstradingcompanies.html">LTC LLC</a>
+</h3>
+</div>
+<br><a href="#back_to_top">Back to top</a>
+</body>
+</html> 
