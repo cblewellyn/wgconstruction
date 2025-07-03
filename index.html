@@ -4,10 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WG Construction Company</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
     /* General Body Styles */
     body {
-        font-family: 'Garamond', serif;
+        font-family: 'Roboto', sans-serif; /* Modern, readable body font */
         background-color: #f0f0f0; /* Light Gray */
         color: #333333; /* Dark Gray for text */
         margin: 0;
@@ -30,9 +35,12 @@
     }
 
     .header h1 {
+        font-family: 'Oswald', sans-serif; /* Strong, modern heading font */
         margin: 10px 0 0;
-        font-size: 3em;
-        font-weight: normal;
+        font-size: 3.5em;
+        font-weight: 500;
+        text-transform: uppercase; /* Adds to the professional, sturdy look */
+        letter-spacing: 2px;
     }
 
     /* Navigation Bar */
@@ -43,11 +51,15 @@
     }
 
     .nav-bar a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
         color: #ffffff;
         text-decoration: none;
-        margin: 0 20px;
-        font-size: 1.2em;
+        margin: 0 15px;
+        font-size: 1.1em;
         transition: color 0.3s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .nav-bar a:hover {
@@ -57,6 +69,8 @@
     /* Main Content Area */
     .container {
         padding: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
     }
 
     #wg_info {
@@ -65,7 +79,9 @@
     }
 
     #wg_info h3 {
+        font-family: 'Roboto', sans-serif;
         font-size: 1.5em;
+        font-weight: 400; /* Regular weight for better readability */
         color: #333333;
         max-width: 800px;
         margin: 0 auto;
@@ -86,10 +102,12 @@
         cursor: pointer;
         padding: 14px 20px;
         transition: background-color 0.3s;
-        font-size: 1em;
-        font-family: 'Garamond', serif;
-        margin: 0 5px;
+        font-family: 'Oswald', sans-serif; /* Heading font for tabs */
+        font-size: 1.1em;
+        margin: 0 5px 0 0;
         border-radius: 5px 5px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .tab button:hover {
@@ -112,8 +130,11 @@
     }
 
     .tabcontent h3 {
+        font-family: 'Oswald', sans-serif; /* Heading font for tab titles */
         color: #8D021F; /* Cardinal Red */
-        font-size: 1.8em;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
     }
 
     .tabcontent .gallery {
@@ -140,11 +161,13 @@
     #projects {
         background-color: #ffffff;
         padding: 30px;
-        margin: 30px 0;
+        margin: 40px auto;
         border-left: 5px solid #8D021F; /* Cardinal Red */
     }
 
     #projects h3 {
+        font-family: 'Roboto', sans-serif; /* Body font for testimonials */
+        font-weight: 400;
         font-style: italic;
         color: #555555;
     }
@@ -154,13 +177,15 @@
         background-color: #36454F; /* Charcoal Gray */
         color: #ffffff;
         text-align: center;
-        padding: 20px 0;
+        padding: 30px 20px;
     }
 
     .footer h2 {
-        margin: 0;
-        font-size: 1.8em;
-        color: #8D021F; /* Cardinal Red */
+        font-family: 'Oswald', sans-serif; /* Heading font */
+        margin: 0 0 10px 0;
+        font-size: 2em;
+        color: #ffffff;
+        text-transform: uppercase;
     }
 
     .footer a {
@@ -176,13 +201,54 @@
     .footer .published-by {
         margin-top: 20px;
         font-size: 0.9em;
+        color: #ccc;
+    }
+    .footer .published-by a {
+        font-size: 1em; /* make sure child a is same size */
+        color: #ccc;
     }
     
     .back-to-top {
         display: block;
         text-align: center;
-        margin-top: 20px;
-        font-size: 1.1em;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+
+    .back-to-top a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: #36454F;
+    }
+
+    /* --- Media Query for Mobile Responsiveness --- */
+    @media (max-width: 600px) {
+        .header h1 {
+            font-size: 2.2em; /* Reduce font size for smaller screens */
+        }
+        
+        .nav-bar a {
+            margin: 0 8px; /* Reduce space between nav links */
+            font-size: 1em;
+        }
+
+        .tab button {
+            display: block; /* Stack tab buttons vertically */
+            width: 100%;
+            margin: 0 0 5px 0; /* Add space between stacked buttons */
+            border-radius: 5px; /* Adjust border radius for stacked look */
+        }
+        
+        .tabcontent img {
+            max-width: 100%; /* Ensure images never overflow their container */
+            width: auto; /* Allow image to scale down */
+            height: auto;
+        }
+
+        #wg_info h3 {
+            font-size: 1.2em; /* Adjust paragraph font size for readability */
+        }
     }
 
 </style>
@@ -198,7 +264,7 @@
 
 <nav class="nav-bar">
     <a href="#Contact">Contact</a>
-    <a href="#projects">Projects & Testimonials</a>
+    <a href="#projects">Testimonials</a>
     <a href="mailto:w.g.const.company@gmail.com">Email Your Ideas</a>
 </nav>
 
@@ -261,14 +327,17 @@
     </div>
 </div>
 
+<div class="back-to-top">
+    <a href="#back_to_top">Back to Top</a>
+</div>
+
 <footer id="Contact" class="footer">
-    <h2>Contact: <br>Whitney Gonzalez</h2>
+    <h2>Contact: Whitney Gonzalez</h2>
     <a href="tel:8656849320">865-684-9320</a><br><br>
     <a href="mailto:w.g.const.company@gmail.com">w.g.const.company@gmail.com</a>
     <div class="published-by">
         Published by <a href="Llynstradingcompanies.html">LTC LLC</a>
     </div>
-    <a href="#back_to_top" class="back-to-top">Back to top</a>
 </footer>
 
 <script>
@@ -285,7 +354,7 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    // Get the element with id="defaultOpen" and click on it
+    // Get the element with id="defaultOpen" and click on it to open the first tab by default
     document.getElementById("defaultOpen").click();
 </script>
 
